@@ -12,10 +12,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!--Import main stylesheet-->
-    <link type="text/css" rel="stylesheet" href="css/main.css">
     
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
 
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" /> [[+arLink]]
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>

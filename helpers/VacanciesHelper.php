@@ -177,37 +177,19 @@ class VacanciesHelper extends BaseHelper
 
           $langFile  = json_decode(file_get_contents('../lang/careers.json'), true);
           $lang = $_SESSION['lang'] ;
-
-          $apply_now       = $langFile['submit'][$lang];
+          $apply_now       = 'Edit job';
           $submit_now       = $langFile['submitN'][$lang];
-          $egypt            = $langFile['egypt'][$lang];
+          $link             = 'editCareer';
+          $query = $xpdo->newQuery('Posts');
+          if(AdminUsersHelper::IsLoggedIn()==false||$_SESSION['AdminUser']['role']=='user')
+          {
+             $today = date("Y/m/d");
+             $query->where(array('end_date:>='=>$today,'start_date:<='=>$today));
+             $link = 'careerDetails';
+             $apply_now       = $langFile['submit'][$lang];
 
-          $query = $xpdo->newQuery('Vacancies');
-          $query->sortby('created_at', 'DESC');
-
-          $pagesCount = $xpdo->getCount('Vacancies', $query); 
-          $limit = 12;
-          $totalpages  = ceil($pagesCount / $limit);
-
-          if (isset($_POST['currentpage']) && is_numeric($_POST['currentpage'])) {
-            $currentpage = (int) $_POST['currentpage'];
-          } else {
-                  $currentpage = 1;
           }
-
-          if ($currentpage > $totalpages) {
-                  $currentpage = $totalpages;
-          }
-
-              if ($currentpage < 1) {
-                  $currentpage = 1;
-          }
-
-          $offset = ($currentpage - 1) * $limit;
-
-          $query->limit($limit, $offset);
-
-          $allObj = $xpdo->getCollection('Vacancies' ,$query);
+          $allObj = $xpdo->getCollection('Posts' ,$query);
 
           $output = '';
 
@@ -221,19 +203,10 @@ class VacanciesHelper extends BaseHelper
 
           foreach($allObj as $currObj)
           { 
-            $department = $xpdo->getObject('Departments', array('id' => $currObj->get('department_id')));
-            $department_name = $department->get('name_'.$lang);
-
-            $government = $xpdo->getObject('Governments', array('id' => $currObj->get('government_id')));
-            $government_name = $government->get('name_'.$lang);
             $output .= new LoadChunk('singleCareer', 'front/careers', array(
-                                                'totalPages'      =>  $totalpages,
-                                                'lang'            =>  $lang,
-                                                'egypt'           =>  $egypt,
-                                                'title'           =>  $currObj->Get('title_'.$lang),
-                                                'type'            =>  $currObj->Get('type_'.$lang),
-                                                'department_name' =>  $department_name,
-                                                'government_name' =>  $government_name,
+                                                'link'            =>  $link,
+                                                'title'           =>  $currObj->Get('title'),
+                                                'experience'      =>  $currObj->Get('experience'),
                                                 'apply_now'       =>  $apply_now,
                                                 'currID'          =>  $currObj->Get('id')
                                             ),'../');

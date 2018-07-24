@@ -4,8 +4,9 @@ require_once('helpers/PageLoadHelper.php');
 require_once('helpers/AdminUsersHelper.php');
 require_once('helpers/UtilityHelper.php');
 
-if (AdminUsersHelper::IsLoggedIn())
+if (AdminUsersHelper::IsLoggedIn()==true)
 {
+	echo "test";
 	UtilityHelper::RedirectTo('index.php');
 }
 
