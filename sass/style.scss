@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "components/colors";
+@import "components/global";
+@import "components/animate";
+@import "components/typography";
+@import "components/header";
+@import "components/slider";
+@import "components/footer";
+@import "components/loader";
+//Homepage Styles
+@import "components/about";
+@import "components/products";
+@import "components/videos";
+@import "components/news";
+@import "components/contact";
+//Inner Pages Styles
+@import "components/pages/newsList";
+@import "components/pages/newsDetails";
+@import "components/pages/videosList";
+@import "components/pages/productsList";
+@import "components/pages/productDetails";
+@import "components/pages/careers";
+@import "components/pages/aboutPage";
+@import "components/pages/contactPage";

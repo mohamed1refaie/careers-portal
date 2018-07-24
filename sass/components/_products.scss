@@ -1,0 +1,88 @@
+.productsSection {
+    padding: 40px 0;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .prodDesc {
+        padding: 0 120px;
+        font-size: 20px;
+        margin-top: 0;
+        font-weight: 100;
+        @media screen and (max-width: 992px) {
+            padding: 0 20px;
+            font-size: 18px;
+        }
+    }
+    .tabs {
+        border: 1px solid #fff;
+        border-radius: 56px;
+        background-color: transparent;
+    }
+    .tabs .tab a.active {
+        background-color: white;
+        color: $primary-blue;
+        border-radius: 60px;
+    }
+    .tabs .indicator {
+        display: none;
+    }
+    .tabs .tab a {
+        color: #ffffff;
+    }
+    .owl-carousel {
+        padding-top: 50px;
+        .owl-stage {
+            margin: 0 auto;
+        }
+        img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .owl-nav {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            .owl-prev,
+            .owl-next {
+                display: inline-block;
+                i {
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+            .owl-next {
+                float: right;
+            }
+        }
+    }
+    #prodLoader {
+        position: absolute;
+        left: 0;
+        margin-top: 50px;
+        .spinner-layer {
+            border-color: #ffffff;
+        }
+    }
+    .prodTitle {
+        z-index: 1;
+        h1 {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        h1::after {
+            content: " ";
+            background-image: url('../img/leaf.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            background-position: center;
+            position: absolute;
+            top: -22px;
+            right: 90px;
+            z-index: -1;
+        }
+    }
+}

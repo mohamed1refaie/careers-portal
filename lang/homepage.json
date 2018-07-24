@@ -1,0 +1,50 @@
+{
+	"about":
+	{
+		"en":"ABOUT EGYPT FOODS","ar":"عن الشركه"
+	
+	},
+
+	"products":
+	{
+		"en":"Our Products","ar":"منتجاتنا"
+	},
+
+	"videos":
+	{
+		"en":"Our Videos","ar":"الفيديوهات"
+	},
+
+	"viewMore":
+	{
+		"en":"View More","ar":"المزيد"
+	},
+
+	"latestNews":
+	{
+		"en":"Latest News","ar":"الخبار"
+	},
+
+	"productsText":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.","ar":"Curabitur arcu erat, accumsan id imperdiet et, in Arabic"
+	},
+
+	"videosText":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+		"ar":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, in Arabic"
+	},
+
+	"newsText":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+		"ar":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, in Arabic"
+	},
+
+	"contactusText":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+		"ar":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, in Arabic"
+	}
+}

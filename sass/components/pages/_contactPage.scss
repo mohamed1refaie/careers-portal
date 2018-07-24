@@ -1,0 +1,45 @@
+//Contact Page
+.contactContent {
+    position: relative;
+    top: -120px;
+    .contactContainer {
+        @extend .productsList;
+        #contactMap {
+            width: 100%;
+            height: 240px;
+            border: 1px solid $green-news;
+        }
+        .contactInfo {
+            h2 {
+                margin-top: 0;
+                color: $primary-blue;
+                font-weight: 600;
+                margin-bottom: 20px;
+                span {
+                    font-weight: 100;
+                }
+            }
+            .contactBranchesText {
+                padding-left: 50px;
+            }
+            p {
+                position: relative;
+                margin-bottom: 30px;
+                span {
+                    background: $primary-blue;
+                    padding: 5px;
+                    border-radius: 50%;
+                    width: 34px;
+                    height: 34px;
+                    position: absolute;
+                    text-align: center;
+                    left: 0;
+                    i {
+                        font-size: 18px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

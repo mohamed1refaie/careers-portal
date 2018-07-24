@@ -1,0 +1,45 @@
+.newsList {
+    position: relative;
+    top: -120px;
+    padding-bottom: 0;
+    .newsCard {
+        border: 1px solid $green-news;
+        .card-image {
+            max-height: 47%;
+            span {
+                position: absolute;
+                bottom: 0;
+                right: 16px;
+                background: $primary-blue;
+                color: #fff;
+                padding: 6px 8px;
+            }
+        }
+        .card-content {
+            max-height: 62% !important;
+            padding: 6px 20px !important;
+            h5 {
+                font-size: 22px;
+                font-weight: 600;
+                color: $primary-blue;
+                line-height: 1.4;
+            }
+            p {
+                font-size: 15px;
+                color: $dark-grey;
+            }
+        }
+        .readMore {
+            color: $primary-blue;
+            margin-right: 10px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            i {
+                font-size: 18px;
+                vertical-align: sub;
+                margin-left: 4px;
+            }
+        }
+    }
+}

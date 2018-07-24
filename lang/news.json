@@ -1,0 +1,33 @@
+{
+	"pageTitle":
+	{
+		"en":"News","ar":"الاخبار"
+	
+	},
+
+	"newsDescription":
+	{
+		"en":"Egypt Foods latest News","ar":"اخر الاخبار"
+	
+	},
+
+	"viewMore":
+	{
+		"en":"View More","ar":"المزيد"
+	},
+
+	"viewDetails":
+	{
+		"en":"View Details","ar":"اظهار التفاصيل"
+	},
+
+	"seeMore":
+	{
+		"en":"See More","ar":"المزيد"
+	},
+
+	"related":
+	{
+		"en":"You may also like","ar":"قد يعجبك ايضا"
+	}
+}

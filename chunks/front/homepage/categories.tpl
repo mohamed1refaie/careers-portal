@@ -1,0 +1,1 @@
+<li class="tab col s12 m4"><a href="#" onclick="getProducts([[+category_id]])" class="cat">[[+category_name]]</a></li>

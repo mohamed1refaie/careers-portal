@@ -1,0 +1,78 @@
+.videosSection {
+    padding: 40px 0;
+    h1 {
+        margin-bottom: 0;
+    }
+    .videoWidget {
+        // z-index: 2;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        .overlay {
+            position: absolute;
+            border-radius: 0 0px 10px 10px;
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        }
+        .videoText {
+            position: absolute;
+            width: 100%;
+            top: 33%;
+            z-index: 1;
+            padding: 0 16px;
+            .playBtn {
+                max-width: 60px;
+                margin: 0 auto;
+                display: block;
+                @include transition();
+            }
+            .playBtn:hover {
+                opacity: 0.8;
+            }
+            h6 {
+                margin-top: 20px;
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+            span {
+                color: #ffffff;
+                font-size: 14px;
+                img {
+                    max-width: 16px;
+                    display: inline-block;
+                    margin-right: 4px;
+                    vertical-align: text-bottom;
+                }
+                .dropdown-button {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    h1 {
+        position: relative;
+        display: inline-block;
+    }
+    h1::after {
+        content: " ";
+        background-image: url('../img/leaf.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        position: absolute;
+        top: -22px;
+        right: 71px;
+        z-index: -1;
+    }
+}

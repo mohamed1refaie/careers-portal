@@ -1,0 +1,87 @@
+//Products List
+.productsList {
+    padding: 40px 60px !important;
+    border: 1px solid $green-news;
+    @include transition();
+    @media screen and (max-width: 992px) {
+        padding: 40px 20px !important;
+    }
+    .tabs {
+        background: #ededed;
+        text-align: center;
+        margin-bottom: 20px;
+        .tab {
+            a:hover,
+            a.active {
+                color: $green-news;
+            }
+            a {
+                color: $primary-blue;
+            }
+        }
+        .indicator {
+            background-color: $green-news;
+        }
+    }
+    .prodWidget {
+        position: relative;
+        margin-bottom: 20px;
+        min-height: 320px;
+        .prodImage {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 26px;
+            height: 160px;
+            max-height: 160px;
+            overflow: hidden;
+            img {
+                margin: auto;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        .prodImage::after {
+            content: " ";
+            position: absolute;
+            width: 1px;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.2);
+            right: 0;
+        }
+        a:hover,
+        a:active {
+            color: rgba(0, 54, 119, 0.84);
+        }
+        a {
+            color: $primary-blue;
+            @include transition();
+            h5 {
+                margin-top: 20px;
+                i {
+                    float: right;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) {
+        .prodWidget:nth-of-type(3n) {
+            .prodImage::after {
+                content: none;
+            }
+        }
+    }
+    @media screen and (max-width:992px) {
+        .prodWidget:nth-of-type(2n) {
+            .prodImage::after {
+                content: none;
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        .prodWidget:nth-of-type(n) {
+            .prodImage::after {
+                content: none;
+            }
+        }
+    }
+}

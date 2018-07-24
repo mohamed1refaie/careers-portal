@@ -1,0 +1,88 @@
+//News details
+.newsDetails {
+    position: relative;
+    top: -120px;
+    .detailsCard {
+        padding: 30px 60px;
+        border: 1px solid $green-news;
+        @media screen and (max-width: 600px) {
+            padding: 30px 30px;
+        }
+        h2 {
+            color: $primary-blue;
+            text-transform: initial;
+            margin-top: 0;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        .socialShare {
+            border-bottom: 1px solid $primary-blue;
+            margin-bottom: 30px;
+            padding-bottom: 4px;
+            margin-top: 40px;
+            .newsDate {
+                background: $primary-blue;
+                color: #fff;
+                padding: 6px 10px;
+                margin-left: 10px;
+                i {
+                    font-size: 18px;
+                    vertical-align: text-bottom;
+                    margin-right: 6px;
+                }
+            }
+            .shareIcons {
+                width: 160px;
+                float: right;
+                margin: 0;
+                position: relative;
+                top: -13px;
+                text-align: right;
+                @media screen and (max-width: 600px) {
+                    top: -33px;
+                }
+                li {
+                    margin-right: 10px;
+                    display: initial;
+                    img {
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+        .newsBody {
+            .newsImage {
+                display: block;
+                margin: 20px auto;
+                max-width: 100%;
+                border: 1px solid $green-news;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            div {
+                padding: 0 !important;
+            }
+        }
+    }
+    .relatedNews {
+        @extend .newsList;
+        top: 0;
+    }
+}
+
+.innerTitle {
+    border-bottom: 1px solid $primary-blue;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    h3 {
+        display: inline-block;
+        background: $primary-blue;
+        color: #fff;
+        font-size: 28px;
+        padding: 10px 18px;
+        margin-left: 18px;
+        margin-bottom: -1px;
+    }
+}

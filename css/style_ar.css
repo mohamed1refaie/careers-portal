@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'GE SS Two Light';
+  src: url("../fonts/GE_SS_Two_Light/GE_SS_Two_Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/GE_SS_Two_Light/GE_SS_Two_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GE_SS_Two_Light/GE_SS_Two_Light.woff2") format("woff2"), url("../fonts/GE_SS_Two_Light/GE_SS_Two_Light.woff") format("woff"), url("../fonts/GE_SS_Two_Light/GE_SS_Two_Light.ttf") format("truetype"); }
+body {
+  direction: rtl;
+  font-family: 'GE SS Two Light'; }
+
+.input-field label {
+  right: 0.75rem; }
+.input-field .prefix ~ input,
+.input-field .prefix ~ textarea {
+  margin-right: 3rem; }
+.input-field .prefix ~ label {
+  margin-right: 3rem; }
+
+.collapsible-header i {
+  float: right; }
+
+form p {
+  text-align: right; }
+
+[type="checkbox"] {
+  /* checkbox aspect */ }
+  [type="checkbox"] + label {
+    padding-right: 35px; }
+  [type="checkbox"] + label:before {
+    right: 0; }
+
+[type="checkbox"]:checked {
+  /* checkbox aspect */ }
+  [type="checkbox"]:checked + label:before {
+    right: 10px; }
+
+[type="checkbox"].filled-in + label:before {
+  right: 10px; }
+[type="checkbox"].filled-in + label:after {
+  right: 0; }
+
+[type="radio"] {
+  /* radio aspect */
+  /* radio aspect */ }
+  [type="radio"] + label {
+    padding-right: 35px; }
+  [type="radio"] + label:before {
+    right: 0; }
+  [type="radio"] + label:after {
+    right: 0; }
+
+.row .col {
+  float: right; }
+
+.file-field .file-path-wrapper {
+  padding-right: 10px; }
+.file-field .btn {
+  float: right; }
+
+span.badge {
+  left: 15px;
+  right: inherit; }
+
+.dropdown-content li {
+  text-align: right; }
+
+.secondary-content {
+  float: left; }
+
+.breadcrumb:before {
+  content: '\E5CB'; }
+
+.collection .collection-item.avatar {
+  padding-left: 0;
+  padding-right: 72px; }
+  .collection .collection-item.avatar .circle {
+    right: 15px;
+    left: auto; }
+  .collection .collection-item.avatar .secondary-content {
+    left: 16px;
+    right: auto; }
+.collection.avatar {
+  padding-right: 72px;
+  padding-left: auto; }
+  .collection.avatar .secondary-content {
+    left: 16px; }
+
+.select-wrapper span.caret {
+  right: auto;
+  left: 0; }
+
+.chip img {
+  float: right;
+  margin: 0 -8px 0 12px; }
+.chip i.material-icons {
+  float: left;
+  padding-right: 8px;
+  padding-left: 0; }
+
+blockquote {
+  margin: 20px 0;
+  padding-right: 1.5rem;
+  border-right: 5px solid #ee6e73; }
+
+.input-field input[type=search] {
+  padding-right: 4rem;
+  width: calc(100% - 8rem); }
+
+.table-of-contents a.active {
+  padding-right: 18px;
+  border-right: 2px solid #ea4a4f;
+  border-left: none; }
+
+.table-of-contents a {
+  padding-right: 20px; }
+
+.table-of-contents a:hover {
+  padding-right: 19px;
+  border-left: none;
+  border-right: 1px solid #ea4a4f; }
+
+td,
+th {
+  text-align: right; }
+
+.left {
+  float: right !important; }
+
+.right {
+  float: left !important; }
+
+.productsSection .tabs {
+  padding-right: 0; }
+
+.preloader-wrapper {
+  direction: ltr; }
+
+.circle-clipper {
+  float: left !important; }
+
+@media only screen and (min-width: 601px) {
+  .row .col.offset-m1 {
+    margin-right: 8.3333333333%;
+    margin-left: 0; } }
+
+.owl-prev {
+  float: left; }
+
+header .mainHeader .mainMenu a li:after {
+  margin-right: 14px;
+  margin-left: 0; }
+
+.contactSection .contactForm {
+  left: 0;
+  right: initial; }
+
+.langLink {
+  font-family: 'Lato', sans-serif !important;
+  padding: 12px 18px !important; }
+
+.newsSection .newsWidget .imageFrame .newsText .moreNews {
+  float: left !important; }
+  .newsSection .newsWidget .imageFrame .newsText .moreNews i {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph;
+    /*IE*/
+    filter: fliph;
+    /*IE*/
+    margin-right: 10px; }
+
+.newsSection .newsWidget .imageFrame .newsText .newsDate i {
+  margin-left: 10px;
+  margin-right: 0px; }
+
+footer .socialIcons {
+  padding: 0; }
+
+footer .socialIcons li {
+  margin-left: 16px;
+  margin-right: 0; }
+
+.dropdown-content {
+  padding-right: 0; }
+
+.productsList .prodWidget .prodImage::after,
+.careersList .prodWidget .prodImage::after,
+.careerDetails .prodWidget .prodImage::after,
+.careersFormDetails .prodWidget .prodImage::after {
+  left: 0;
+  right: initial; }
+
+.productsList .prodWidget a h5 i,
+.careersList .prodWidget a h5 i,
+.careerDetails .prodWidget a h5 i,
+.careersFormDetails .prodWidget a h5 i {
+  float: left;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+.productDetails .flavorsList {
+  margin-right: 0;
+  margin-left: 120px; }
+
+.productDetails .flavorsList li::before {
+  margin-left: 22px;
+  margin-right: 0; }
+
+.productDetails h3 span {
+  float: right; }
+
+.lg-outer.lg-visible {
+  direction: ltr; }
+
+.aboutSection .aboutCarousel .owl-nav {
+  right: -22px;
+  left: initial; }
+
+.careersList .careersWrapper .careerRow .btn {
+  float: left; }
+
+.newsDetails .detailsCard .socialShare .shareIcons {
+  float: left;
+  padding-right: 0; }
+
+.newsDetails .detailsCard .socialShare .newsDate i {
+  margin-left: 6px;
+  margin-right: 0; }
+
+.newsList .newsCard .readMore,
+.newsDetails .relatedNews .newsCard .readMore {
+  left: 20px;
+  right: initial; }
+
+.newsList .newsCard .readMore i,
+.newsDetails .relatedNews .newsCard .readMore i {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+.newsSection .newsTitle h1::after {
+  right: 57px; }
+
+.aboutContent .boardWidget:after {
+  left: 0;
+  right: initial; }
+
+.aboutContent .boardWidget .boardInfo .socialLinks {
+  padding: 0; }
+
+.contactContent .contactContainer .contactInfo p {
+  padding-left: 0px;
+  padding-right: 50px; }
+
+.contactContent .contactContainer .contactInfo p span {
+  right: 0;
+  padding: 8px;
+  left: initial; }
+
+.contactBranchesText {
+  padding-left: initial;
+  padding-right: 50px; }
+
+.contactSection .branchesTabs {
+  left: initial;
+  right: 0; }
+
+/*# sourceMappingURL=style_ar.css.map */

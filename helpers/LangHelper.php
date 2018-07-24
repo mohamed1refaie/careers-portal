@@ -4,7 +4,7 @@ if (!isset($_SESSION)) session_start();
 
 require_once('AdminUsersHelper.php');
 
-/*class LangHelper
+class LangHelper
 {
 	public function getFile()
 	{
@@ -47,4 +47,3 @@ require_once('AdminUsersHelper.php');
 			return $lang;
     }
 }
-*/

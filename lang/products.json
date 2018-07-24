@@ -1,0 +1,54 @@
+{
+	"pageTitle":
+	{
+		"en":"Products","ar":"المنتجات"
+	
+	},
+
+	"pageDescription":
+	{
+		"en":"Egypt Foods Products","ar":"منتجات الشركه"
+	
+	},
+
+	"productDetailsDescription":
+	{
+		"en":"Egypt Foods Product","ar":"منتجات الشركه"
+	
+	},
+
+	"description":
+	{
+		"en":"Description","ar":"وصف"
+	
+	},
+
+	"flavours":
+	{
+		"en":"Flavours","ar":"نكهات"
+	
+	},
+
+	"related":
+	{
+		"en":"Related","ar":"متعلقه"
+	
+	},
+
+	"products":
+	{
+		"en":"Products","ar":"منتجات"
+	
+	},
+
+	"share":
+	{
+		"en":"Share","ar":"شارك"
+	},
+
+	"viewMore":
+	{
+		"en":"View More","ar":"المزيد"
+	
+	}
+}

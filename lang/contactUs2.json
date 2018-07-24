@@ -1,0 +1,71 @@
+{
+	"contact":
+	{
+		"en":"Contact","ar":" الاتصال"
+	
+	},
+
+	"info":
+	{
+		"en":"Info","ar":"معلومات"
+	
+	},
+
+	"pageTitle":
+	{
+		"en":"Contact Us","ar":"اتصل بنا"
+	
+	},
+
+	"pageDescription":
+	{
+		"en":"Contact Us Desscription","ar":"Contact Us Desscription in Arabic"
+	
+	},
+
+	"contactUs":
+	{
+		"en":"Contact Us","ar":"اتصل بنا"
+	},
+
+	"firstName":
+    {
+ 	    "en":"First Name","ar":"الاسم الاول"
+    },
+
+    "lastName":
+    {
+ 	    "en":"Last Name","ar":"الاسم الاخير"
+    },
+
+    "email":
+    {
+ 	    "en":"Email Address","ar":"البريد الالكتروني"
+    },
+
+    "mobile":
+    {
+ 	    "en":"Mobile Number","ar":"رقم الهاتف"
+    },
+
+    "message":
+    {
+ 	    "en":"Message","ar":"الرساله"
+    },
+
+	"contactusText":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.",
+		"ar":"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, in Arabic"
+	},
+
+	"submit":
+	{
+		"en":"Send Message","ar":"ارسال"
+	},
+
+	"address":
+	{
+		"en":"Curabitur arcu erat, accumsan id imperdiet et, porttitor ","ar":"Curabitur arcu erat, accumsan id imperdiet et, IN ARABIC"
+	}
+}

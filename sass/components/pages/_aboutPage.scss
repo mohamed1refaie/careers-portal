@@ -1,0 +1,78 @@
+//About Us page
+.aboutPage {
+    height: 280px !important;
+}
+
+.aboutContent {
+    padding: 60px 0;
+    img {
+        max-width: 94%;
+        border: 1px solid $green-news;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+        margin-bottom: 16px;
+        margin-top: 0;
+        color: $primary-blue;
+        text-transform: initial;
+    }
+    .boardWidget {
+        position: relative;
+        margin-bottom: 20px;
+        .imageFrame {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+            border: 2px solid #ffffff;
+        }
+        .boardInfo {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+            padding-bottom: 16px;
+            h5 {
+                color: $primary-blue;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            span {
+                margin: 0;
+                color: $green-news;
+                text-align: center;
+                display: block;
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
+                color: $primary-blue;
+                text-align: center;
+                margin-top: 4px;
+            }
+            .socialLinks {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 26px;
+                    margin-right: 8px;
+                    img {
+                        border: none;
+                        box-shadow: initial;
+                    }
+                }
+            }
+        }
+    }
+    .boardWidget:after {
+        content: " ";
+        position: absolute;
+        width: 1px;
+        height: 95%;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.18);
+    }
+}
