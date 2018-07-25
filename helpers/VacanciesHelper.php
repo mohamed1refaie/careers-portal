@@ -365,34 +365,32 @@ class VacanciesHelper extends BaseHelper
       global $xpdo;
       $query = $xpdo->newQuery('Applications');
       $query->sortby('id', 'DESC');
-      $applicants = $xpdo->getCollection('Applications', $query);
+      $applications = $xpdo->getCollection('Applications', $query);
       $allApplications = '';
-      if (!empty($applicants)) {
+
+      if (!empty($applications)) {
         // <td>Actions</td>
         $allApplications .="<table class='responsive-table'><thead><tr>
-                      <td>First Name</td>
-                      <td>Last Name</td>
+                      <td>Name</td>
+                      <td>University</td>
                       <td>Email</td>
-                      <td>Phone Number</td>
-                      <td>Department</td>
-                      <td>Message</td>
+                      <td>Birth Date</td>
+                      <td>Notes</td>
+                      <td>Job</td>
                       <td>CV</td>
-                      <td>Delete</td>
-
-                      
-
                       </tr></thead><tbody>";
 
-              foreach ($applicants as $applicant) {
-                $allApplications .= new LoadChunk('applicant', 'admin/applicants', array(
-                                                               'ID'               => $applicant->get('id'),
-                                                               'first_name'       => $applicant->get('first_name'),
-                                                               'last_name'        => $applicant->get('last_name'),
-                                                               'phone'            => $applicant->get('phone'),
-                                                               'email'            => $applicant->get('email'),
-                                                               'cv'               => $applicant->get('cv'),
-                                                               'department'       => $applicant->get('department'),
-                                                               'message'          => $applicant->get('message')
+              foreach ($applications as $applicant) {
+                $post = $xpdo->getObject('Posts', array('id' => $applicant->get('post_id')));
+                $job = $post->get('title');
+                $allApplications .= new LoadChunk('applicant', 'front/applications', array(
+                                                              'name' => $applicant->get('name'),
+                                                              'university' => $applicant->get('university'),
+                                                               'email' => $applicant->get('email'),
+                                                               'birthdate' => $applicant->get('birthdate'),
+                                                               'notes' => $applicant->get('notes'),
+                                                               'job'  => $job,
+                                                               'cv' => $applicant->get('cv')
                                                                ), '../');
               }
 
