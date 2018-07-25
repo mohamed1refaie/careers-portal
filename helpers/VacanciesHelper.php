@@ -48,6 +48,33 @@ class VacanciesHelper extends BaseHelper
 
     }
 
+    public function AddApplication() 
+    {
+      global $xpdo;
+
+      $post_id                = $_POST['id'];
+      $name                   = $_POST['name'];
+      $university             = $_POST['university'];
+      $birthdate              = $_POST['birthdate'];
+      $email                  = $_POST['email'];
+      $cv                     = $_POST['cv'];
+      $notes                  = $_POST['notes'];
+
+      $applications = $xpdo->newObject('Applications');
+
+      $fields['post_id']           = $post_id;
+      $fields['name']              = $name;
+      $fields['university']        = $university;
+      $fields['birthdate']         = $birthdate;
+      $fields['email']             = $email;
+      $fields['cv']                = $cv;
+      $fields['notes']             = $notes;
+
+      $applications->fromArray($fields);
+      $applications->save();
+
+    }
+
     public function GetAll()
     {
        global $xpdo;
@@ -331,6 +358,51 @@ class VacanciesHelper extends BaseHelper
 
           return $allApplications;
     }
+
+      public function GetAllApplications()
+    {
+
+      global $xpdo;
+      $query = $xpdo->newQuery('Applications');
+      $query->sortby('id', 'DESC');
+      $applicants = $xpdo->getCollection('Applications', $query);
+      $allApplications = '';
+      if (!empty($applicants)) {
+        // <td>Actions</td>
+        $allApplications .="<table class='responsive-table'><thead><tr>
+                      <td>First Name</td>
+                      <td>Last Name</td>
+                      <td>Email</td>
+                      <td>Phone Number</td>
+                      <td>Department</td>
+                      <td>Message</td>
+                      <td>CV</td>
+                      <td>Delete</td>
+
+                      
+
+                      </tr></thead><tbody>";
+
+              foreach ($applicants as $applicant) {
+                $allApplications .= new LoadChunk('applicant', 'admin/applicants', array(
+                                                               'ID'               => $applicant->get('id'),
+                                                               'first_name'       => $applicant->get('first_name'),
+                                                               'last_name'        => $applicant->get('last_name'),
+                                                               'phone'            => $applicant->get('phone'),
+                                                               'email'            => $applicant->get('email'),
+                                                               'cv'               => $applicant->get('cv'),
+                                                               'department'       => $applicant->get('department'),
+                                                               'message'          => $applicant->get('message')
+                                                               ), '../');
+              }
+
+              $allApplications .="</tbody></table>";
+      }
+      
+
+          return $allApplications;
+    }
+
 
     public function DeleteApplication()
     {

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model package="egyptfoods" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" version="1.1">
+	<object class="Applications" table="applications" extends="xPDOSimpleObject">
+		<field key="name" dbtype="varchar" precision="300" phptype="string" null="false" />
+		<field key="post_id" dbtype="int" precision="11" phptype="integer" null="false" />
+		<field key="university" dbtype="varchar" precision="300" phptype="string" null="false" />
+		<field key="birthdate" dbtype="date" phptype="date" null="false" />
+		<field key="email" dbtype="varchar" precision="300" phptype="string" null="false" />
+		<field key="cv" dbtype="varchar" precision="300" phptype="string" null="false" />
+		<field key="notes" dbtype="text" phptype="string" null="false" />
+	</object>
 	<object class="Posts" table="posts" extends="xPDOSimpleObject">
 		<field key="title" dbtype="varchar" precision="200" phptype="string" null="false" />
 		<field key="experience" dbtype="varchar" precision="250" phptype="string" null="false" />

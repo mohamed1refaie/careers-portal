@@ -7,8 +7,8 @@ require_once('helpers/AdminUsersHelper.php');
 $langFile  = json_decode(file_get_contents('lang/videos.json'), true);
 $lang     = (isset($_GET['lang'])) ? $_GET['lang'] : 'en';
 
-$page_title       = "Refaies website";
-$page_description = "this is the description of the website";
+$page_title       = "Ref's Website";
+$page_description = "";
 $view_more        =	"loadmore";
 
 $titleTPL        = new LoadChunk('titleTPL', 'front/videos', array('page_title'       => $page_title,

@@ -3,7 +3,8 @@
 $xpdo_meta_map = array (
   'xPDOSimpleObject' => 
   array (
-    0 => 'Posts',
-    1 => 'Users',
+    0 => 'Applications',
+    1 => 'Posts',
+    2 => 'Users',
   ),
 );

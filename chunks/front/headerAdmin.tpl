@@ -15,7 +15,7 @@
                 </ul>
 
                 <p class="inline-block white-text">
-                    your career portal
+                    Ref's career portal
                 </p>
 
             </div>
@@ -40,6 +40,9 @@
                         <ul class="mainMenu">
                             <a href="createPost.php">
                                 <li>Create Post</li>
+                            </a>
+                            <a href="applications.php">
+                                <li>Applications</li>
                             </a>
                             <a href="logout.php">
                                 <li>Logout</li>

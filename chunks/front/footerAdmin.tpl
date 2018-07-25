@@ -11,6 +11,9 @@
                     <a href="createPost.php">
                         <li>Create Post</li>
                     </a>
+                    <a href="applications.php">
+                        <li>Applications</li>
+                    </a>
                     <a href="logout.php">
                         <li>LogOut</li>
                     </a>

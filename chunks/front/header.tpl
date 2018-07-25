@@ -15,7 +15,7 @@
                 </ul>
 
                 <p class="inline-block white-text">
-                    your career portal
+                    Ref's career portal
                 </p>
 
             </div>

@@ -12,6 +12,10 @@ if(isset($_POST['operation']))
 			echo $vacanciesHelper->Add();
 			break;
 
+		case 'addApplication':
+			echo $vacanciesHelper->AddApplication();
+			break;
+
 		case 'get':
 			echo $vacanciesHelper->GetVacancy();
 			break;
@@ -39,6 +43,10 @@ if(isset($_POST['operation']))
 		case 'getAllApplicants':
 			echo $vacanciesHelper->GetAllApplicants();
 			break;
+
+		case 'getAllApplications':
+			echo $vacanciesHelper->GetAllApplications();
+			break;	
 
 		case 'deleteApplicant':
 			echo $vacanciesHelper->DeleteApplication();
