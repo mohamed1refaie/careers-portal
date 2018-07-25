@@ -20,8 +20,8 @@
                             <label for="experience">Required Experience Level</label>
                         </div>
                         <div class="input-field col s12 m6">
+                            <span>Job breif/requirements</span>
                             <textarea rows="8" cols="100" id="breif" type="text" name="breif" class="validate" >[[+breif]]</textarea>
-                            <label for="breif">Job breif/requirements</label>
                         </div>
                         <div class="input-field col s12 m6">
                             <span>Start Date</span>

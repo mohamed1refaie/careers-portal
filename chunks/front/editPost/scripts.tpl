@@ -21,6 +21,19 @@
                 }
             });
 
+            let start_date=$('#start_date').val();
+            let end_date=$('#end_date').val();
+            if(start_date>end_date)
+            {
+                swal({
+                        title: "Check Dates",
+                        text: "Start Date must be before End Date",
+                        type: "error",
+                        confirmButtonText: "Close"
+                    });
+                    isValid = false;
+                    return;
+            }
 
             if (!isValid) return;
 
