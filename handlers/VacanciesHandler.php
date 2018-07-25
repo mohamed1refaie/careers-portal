@@ -20,6 +20,10 @@ if(isset($_POST['operation']))
 			echo $vacanciesHelper->EditVacancy();
 			break;
 
+		case 'editPost':
+			echo $vacanciesHelper->EditPost();
+			break;
+
 		case 'delete':
 			echo $vacanciesHelper->DeleteVacancy();
 			break;

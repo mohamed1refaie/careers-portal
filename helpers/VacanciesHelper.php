@@ -143,6 +143,25 @@ class VacanciesHelper extends BaseHelper
       return  $vacancy->save();
     }
 
+    public function EditPost()
+    {
+      global $xpdo;
+      
+      $post = $xpdo->getObject('Posts', array('id' => $_POST['id']));
+      echo $_POST['id'];
+      echo $_POST['title'];
+      $fields = array(
+                      'title'         => $_POST['title'],
+                      'experience'    => $_POST['experience'],
+                      'breif'         => $_POST['breif'],
+                      'start_date'    => $_POST['start_date'],
+                      'end_date'      => $_POST['end_date']
+                      );
+
+      $post->fromArray($fields);
+      return  $post->save();
+    }
+
     public function DeleteVacancy()
     {
       global $xpdo;
@@ -152,6 +171,15 @@ class VacanciesHelper extends BaseHelper
         
         return $vacancy->remove();
       }
+    }
+
+    public function DeletePost($id)
+    {
+      global $xpdo;
+      
+        $post   = $xpdo->getObject('Posts', array('id' => $id));
+        return $post->remove();
+      
     }
 
     public function GetGovernments()
@@ -177,18 +205,20 @@ class VacanciesHelper extends BaseHelper
 
           $langFile  = json_decode(file_get_contents('../lang/careers.json'), true);
           $lang = $_SESSION['lang'] ;
-          $apply_now       = 'Edit job';
+          $apply_now       = 'Edit Post';
           $submit_now       = $langFile['submitN'][$lang];
-          $link             = 'editCareer';
+          $link             = 'editPost';
           $query = $xpdo->newQuery('Posts');
+          $singleCareerPath='singleCareerAdmin';
           if(AdminUsersHelper::IsLoggedIn()==false||$_SESSION['AdminUser']['role']=='user')
           {
              $today = date("Y/m/d");
              $query->where(array('end_date:>='=>$today,'start_date:<='=>$today));
              $link = 'careerDetails';
              $apply_now       = $langFile['submit'][$lang];
-
+             $singleCareerPath='singleCareer';
           }
+          
           $allObj = $xpdo->getCollection('Posts' ,$query);
 
           $output = '';
@@ -201,9 +231,10 @@ class VacanciesHelper extends BaseHelper
               
           }
 
+
           foreach($allObj as $currObj)
           { 
-            $output .= new LoadChunk('singleCareer', 'front/careers', array(
+            $output .= new LoadChunk($singleCareerPath, 'front/careers', array(
                                                 'link'            =>  $link,
                                                 'title'           =>  $currObj->Get('title'),
                                                 'experience'      =>  $currObj->Get('experience'),

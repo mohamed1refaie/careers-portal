@@ -14,6 +14,8 @@
     <div class="col s12 m12 l3 mt20">
         <a href="[[+link]].php?id=[[+currID]]" class="btn blue-btn">[[+apply_now]]</a>
     </div>
-    
+    <div class="col s12 m12 l3 mt20">
+        <a href="deletePost.php?id=[[+currID]]" class="btn blue-btn">Delete</a>
+    </div>
 </div>
 <!--Careers Row-->
