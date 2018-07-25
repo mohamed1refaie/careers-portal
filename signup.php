@@ -1,5 +1,6 @@
 <?php
 require_once('helpers/LoadChunk.php');
+require_once('helpers/LangHelper.php');
 require_once('helpers/PageLoadHelper.php');
 require_once('helpers/AdminUsersHelper.php');
 require_once('helpers/UtilityHelper.php');

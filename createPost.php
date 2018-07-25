@@ -4,9 +4,11 @@ require_once('helpers/LangHelper.php');
 require_once('helpers/PageLoadHelper.php');
 require_once('helpers/AdminUsersHelper.php');
 
+
 if(AdminUsersHelper::IsLoggedIn()==false) {
 	UtilityHelper::RedirectTo('index.php');
 }
+
 $langFile  = json_decode(file_get_contents('lang/videos.json'), true);
 $lang     = (isset($_GET['lang'])) ? $_GET['lang'] : 'en';
 

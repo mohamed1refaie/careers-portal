@@ -1,5 +1,6 @@
 <?php
 require_once('helpers/LoadChunk.php');
+require_once('helpers/LangHelper.php');
 require_once('helpers/PageLoadHelper.php');
 require_once('helpers/AdminUsersHelper.php');
 require_once('helpers/UtilityHelper.php');
@@ -36,19 +37,3 @@ $output      = new LoadChunk('login', 'front/login', array(
 													           'extraScript' => $extraScript), '');
 
 echo $output;
-
-
-
-
-
-
-/*
-$head   = new LoadChunk('head', 'admin/master', array(), '../');
-$footer = new LoadChunk('footer', 'admin/master', array('extraScripts' => ''), '../');
-$output = new LoadChunk('login', 'admin', array(
-												'head'   => $head,
-												'footer' => $footer
-											), '../');
-
-echo $output;
-*/
